@@ -9,17 +9,15 @@ The Trinket M0 uses an ARM Cortex M0+ processor (ATSAMD21E18A).
 
 # Dependencies
 * Install the cross-compiling toolchain for ARM processors (```arm-none-eabi-gcc``` and ```arm-none-eabi-binutils```)
-```
-make build
-```
+* Install the flashing utiliy bossa for your platform (for Arch Linux: [Bossa AUR](https://aur.archlinux.org/packages/bossa/))
 
-# Flashing
-
-* Plug in your Trinket and check the port (e.g. /dev/ttyACM0 or /dev/ttyACM1) and adjust the Makefile accordingly
-* Install flashing utiliy bossa for your platform (for Arch Linux: [Bossa AUR](https://aur.archlinux.org/packages/bossa/))
-* Then do the flashing:
+# Building and Flashing
+* Plug in your Trinket and check the port (e.g. /dev/ttyACM0 or /dev/ttyACM1) 
+* Adjust the port in the Makefile accordingly
+* Then do the building and flashing:
 
 	```
+	make build
 	make flash
 	```
 
